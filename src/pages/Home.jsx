@@ -2,9 +2,11 @@ import React from 'react'
 import Video from '../comonents/home/Video'
 import HomeBottomText from '../comonents/home/HomeBottomText'
 import HomeHeroText from '../comonents/home/HomeHeroText'
+import SmartFooter from './footer.jsx'
 
 function home() {
   return (
+    <>
     <div className='text-white'>
        <div className='h-screen w-screen fixed'>
         <Video />       
@@ -14,8 +16,9 @@ function home() {
             <HomeHeroText />
             <HomeBottomText />
        </div>
-      
     </div>
+     <SmartFooter />
+    </>
   )
 }
 

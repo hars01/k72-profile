@@ -2,10 +2,18 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Agence from './pages/Agence'
 import Projects from './pages/Projects'
+import Skill from './comonents/skills/Skill'
+import ContentPage from './comonents/Content/content'
+import Connect from './pages/Connect'
+import InterestingCards from './pages/InterestingCards'
 // import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useRef } from 'react'
+import Navbar from './comonents/Navigation/Navbar'
+import FullScreenNav from './comonents/Navigation/FullScreenNav'
+// import { CanvasTextDemo } from "@/comonents/animation/text";
+
 
 
 const App = () => {
@@ -18,11 +26,17 @@ const App = () => {
       <Link className='text-shadow-cyan-300 mr-2' to='/projects'>Projects</Link>
  */}
       
-
+      <Navbar />
+      <FullScreenNav />
+      {/* <CanvasTextDemo /> */}
       <Routes>
         <Route path='/' element={<Home />} /> 
         <Route path='/agence' element={<Agence />} /> 
         <Route path='/projects' element={<Projects />} /> 
+        <Route path='/skills' element={<Skill />} /> 
+        <Route path='/content' element={<ContentPage />} />
+        <Route path='/interesting-cards' element={<InterestingCards />} />
+        <Route path='/connect' element={<Connect />} />
       </Routes>
     </div>
   )

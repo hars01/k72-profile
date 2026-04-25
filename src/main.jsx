@@ -4,12 +4,42 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import Stairs from './comonents/common/Stairs.jsx'
+import NavContext from './context/NavContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Stairs />
-      <App />
+      <NavContext>
+         <App />
+      </NavContext>
+
+      {/* <Stairs>
+        <NavContext>
+          <App />
+        </NavContext>
+      </Stairs> */}
     </BrowserRouter>
   </React.StrictMode>,
 )
+
+
+// // src/main.jsx
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './App.jsx';
+// import './index.css';
+// import { BrowserRouter } from 'react-router-dom';
+// import Stairs from './comonents/common/Stairs.jsx';
+// import NavProvider from './context/NavContext.jsx'; // default export from file above
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <NavProvider>
+//         <Stairs />
+//         <App />
+//       </NavProvider>
+//     </BrowserRouter>
+//   </React.StrictMode>
+// );

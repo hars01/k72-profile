@@ -13,3 +13,13 @@ Changed Versions:-
 -> initial commits not handeled due to bad networking and insecurity about project.
 -> version 1.0.1 push already started project
 -> version 1.0.2 add Slider Effect
+
+https://ui.aceternity.com/components/animated-modal or https://ui.aceternity.com/components/expandable-card
+# https://ui.aceternity.com/components/timeline -> ye mere skills ko dikhayega
+# https://ui.aceternity.com/components/tailwindcss-buttons or https://ui.aceternity.com/components/bento-grid -> ye content ke liye sahi rahega button ke form me
+
+https://ui.aceternity.com/components/cards-free or https://ui.aceternity.com/components/text-reveal-card -> cards
+https://ui.aceternity.com/components/container-scroll-animation -> scroll effect
+https://ui.aceternity.com/blocks/contact-sections -> contact us
+https://ui.aceternity.com/components/hero-parallax -> hero section
+https://ui.aceternity.com/components/loader -> loading
