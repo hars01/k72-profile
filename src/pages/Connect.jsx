@@ -131,7 +131,7 @@ export default function Connect() {
 
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left big visual - sliding testimonial carousel */}
-        <div className="relative rounded-3xl overflow-hidden h-[640px] lg:h-[820px] bg-gradient-to-br from-[#ff6b6b] via-[#ff8a8a] to-[#ff3d7f] p-6 shadow-2xl">
+        <div className="relative rounded-3xl overflow-hidden h-[640px] lg:h-[820px] bg-gradient-to-br from-[#ff6b6b] via-[#000000] to-[#ff3d7f] p-6 shadow-2xl">
           <div className="absolute inset-0 opacity-30 mix-blend-overlay" style={{background: 'radial-gradient(closest-side, rgba(255,255,255,0.03), transparent)'}} />
 
           <div className="relative h-full w-full flex items-center">

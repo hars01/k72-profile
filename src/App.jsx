@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Agence from './pages/Agence'
 import Projects from './pages/Projects'
@@ -12,6 +12,7 @@ import gsap from 'gsap'
 import { useRef } from 'react'
 import Navbar from './comonents/Navigation/Navbar'
 import FullScreenNav from './comonents/Navigation/FullScreenNav'
+import SmartFooter from './pages/footer'
 // import { CanvasTextDemo } from "@/comonents/animation/text";
 
 
@@ -19,6 +20,8 @@ import FullScreenNav from './comonents/Navigation/FullScreenNav'
 const App = () => {
 
   
+  const location = useLocation()
+
   return (
     <div className='text-white'>
       {/* <Link className='text-shadow-cyan-300 mr-2' to='/'>Home</Link>
@@ -38,6 +41,7 @@ const App = () => {
         <Route path='/interesting-cards' element={<InterestingCards />} />
         <Route path='/connect' element={<Connect />} />
       </Routes>
+      {location.pathname !== '/' && <SmartFooter />}
     </div>
   )
 }

@@ -6,7 +6,7 @@ import SmartFooter from './footer.jsx'
 
 function home() {
   return (
-    <>
+
     <div className='text-white'>
        <div className='h-screen w-screen fixed'>
         <Video />       
@@ -17,8 +17,7 @@ function home() {
             <HomeBottomText />
        </div>
     </div>
-     <SmartFooter />
-    </>
+    
   )
 }
 

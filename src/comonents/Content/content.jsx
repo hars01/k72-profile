@@ -1,31 +1,49 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom' //for on click
 
 export default function ContentPage() {
   const items = [
     {
-      title: 'AI Content Generation',
-      description: 'Experience the power of AI in generating unique content.',
-      image: 'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg',
+      title: 'React State Management',
+      description: 'Learn how to manage state effectively in your React applications with our comprehensive tools.',
+      image: 'https://media.geeksforgeeks.org/wp-content/uploads/20260409122445299656/1.webp',
+      date: '2025-04-09',
+      link: 'https://www.geeksforgeeks.org/',
     },
     {
-      title: 'Automated Proofreading',
-      description: 'Let AI handle the proofreading of your documents.',
-      image: 'https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg',
+      title: 'JWT Proofreading',
+      description: 'Json Web Token (JWT) proofreading for secure and error-free token management.',
+      image: 'https://media.geeksforgeeks.org/wp-content/uploads/20250908173351627043/client.webp',
+      date: '2025-02-08',
+      link: '',
     },
     {
-      title: 'Contextual Suggestions',
-      description: 'Get AI-powered suggestions based on your writing context.',
-      image: 'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg',
+      title: 'API Integration',
+      description: 'Seamlessly integrate with various APIs to enhance your content capabilities.',
+      image: 'https://media.geeksforgeeks.org/wp-content/uploads/20251215114155566486/frame_3258.webp',
+      date: '2025-01-03',   
+      link: '',
     },
     {
-      title: 'Sentiment Analysis',
-      description: 'Understand the sentiment of your text with AI analysis.',
-      image: 'https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg',
+      title: 'MongoDB Management',
+      description: 'Efficiently manage your MongoDB databases with our intuitive tools.',
+      image: 'https://media.geeksforgeeks.org/wp-content/uploads/20250703171634692371/MongoDB-Features.webp',
+      date: '2024-12-06',
+      link: '',
     },
     {
       title: 'Text Summarization',
       description: 'Summarize your lengthy documents with AI technology.',
-      image: 'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg',
+      image: 'https://tse1.mm.bing.net/th/id/OIP.mwIp6QanC3uvd6FpN95rbgHaDt?pid=Api&P=0&h=180',
+      date: '2024-10-05',
+      link: '',
+    },
+    {
+      title: 'Node.js Scripting',
+      description: 'Create powerful scripts using Node.js to automate your content workflows.',
+      image: 'https://media.geeksforgeeks.org/wp-content/uploads/20260422121133520564/run_time_environment.webp',
+      date: '2024-09-04',
+      link: '', 
     },
   ]
 
@@ -46,8 +64,34 @@ export default function ContentPage() {
               <h2 className="font-semibold text-lg mb-2">{it.title}</h2>
               <p className="text-sm text-neutral-300 mb-4">{it.description}</p>
               <div className="flex items-center justify-between">
-                <div className="text-xs text-neutral-400">Demo • 3 min</div>
-                <button className="px-3 py-1 rounded-full bg-[#D3FD50] text-black text-sm">Try</button>
+                <div className="text-xs text-neutral-400">{it.date}</div>
+                {/* <button onClick={() => navigate(it.link)} className="px-3 py-1 rounded-full bg-[#D3FD50] text-black text-sm" target="_blank" rel="noopener noreferrer"> */}
+                
+                {/* <button
+                    onClick={() => window.open(it.link, "_blank")}
+                    className="px-3 py-1 rounded-full bg-[#D3FD50] text-black text-sm"
+                >
+                  Try
+                </button> */}
+
+                     {/*OR */}
+
+                {it.link ? (
+                <a
+                    href={it.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1 rounded-full bg-[#a950fd] text-[#ffffff] text-sm"
+                >
+                   Try
+                </a>
+                ) : (
+                <span className="px-3 py-1 rounded-full bg-gray-600 text-sm cursor-not-allowed">
+                   Not Ready
+                </span>
+                )}
+
+
               </div>
             </article>
           ))}
@@ -60,7 +104,7 @@ export default function ContentPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="col-span-2 rounded-lg bg-neutral-800/40 p-4">
               <div className="flex gap-3 items-start">
-                <div className="rounded-full bg-gradient-to-r from-pink-500 to-violet-500 h-12 w-12" />
+                <div className="rounded-es-2xl bg-gradient-to-r from-pink-500 to-violet-500 h-12 w-12" />
                 <div>
                   <div className="text-sm text-neutral-200 font-semibold">Just code in Vanilla Javascript</div>
                   <div className="inline-block mt-2 text-xs text-red-400 border border-red-500 rounded-full px-2 py-0.5">Delusional</div>
@@ -69,7 +113,7 @@ export default function ContentPage() {
             </div>
             <div className="rounded-lg bg-neutral-800/40 p-4">
               <div className="flex gap-3 items-start">
-                <div className="rounded-full bg-gradient-to-r from-pink-500 to-violet-500 h-12 w-12" />
+                <div className="rounded-t-full bg-gradient-to-r from-pink-500 to-violet-500 h-12 w-12" />
                 <div>
                   <div className="text-sm text-neutral-200 font-semibold">There are a lot of cool frameworks out there</div>
                   <div className="mt-2 text-xs text-neutral-400">Use PHP.</div>
