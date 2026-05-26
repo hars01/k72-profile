@@ -46,10 +46,15 @@ export default function Connect() {
     setSending(true)
     try {
       const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || ''
-      const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
+      // const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
+
+      const USER_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
+      const OWNER_TEMPLATE_ID = import.meta.env.VITE_Owner_EMAILJS_TEMPLATE_ID || ''
+
       const EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID || ''
 
-      if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_USER_ID) {
+      // if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_USER_ID) 
+      if (!EMAILJS_SERVICE_ID || !USER_TEMPLATE_ID || !OWNER_TEMPLATE_ID || !EMAILJS_USER_ID){
         setStatus({ ok: false, msg: 'EmailJS env vars missing. Restart dev server after updating .env.' })
         setSending(false)
         return
@@ -58,7 +63,7 @@ export default function Connect() {
       // First: send notification to owner with full details
       const ownerPayload = {
         service_id: EMAILJS_SERVICE_ID,
-        template_id: EMAILJS_TEMPLATE_ID,
+        template_id: OWNER_TEMPLATE_ID,
         user_id: EMAILJS_USER_ID,
         template_params: {
           from_name: form.name,
@@ -85,23 +90,25 @@ export default function Connect() {
       // Second: send greeting/confirmation to the user who submitted the form
       const userPayload = {
         service_id: EMAILJS_SERVICE_ID,
-        template_id: EMAILJS_TEMPLATE_ID,
+        template_id: USER_TEMPLATE_ID,
         user_id: EMAILJS_USER_ID,
         template_params: {
-          from_name: 'Team',
+          from_name: `${form.name}`,
           from_email: 'noreply@yourdomain.com',
-          company: '',
-          message: `Thanks ${form.name} — we received your message and will connect shortly.`,
+          company: 'Harsh Mishra Portfolio',
+          message: form.message,
           to_email: form.email
         }
       }
-
+       
+      // Note: this is optional — even if it fails, the owner already got the notification, so we show partial success to user
       const userRes = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userPayload)
       })
 
+      // If user confirmation email fails, log the error but still show success to user since owner got notified
       if (!userRes.ok) {
         const text = await userRes.text().catch(() => '')
         console.error('EmailJS user error', userRes.status, text)
@@ -122,7 +129,7 @@ export default function Connect() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0b0b0b] text-white flex items-center justify-center p-8">
+    <div className="min-h-screen bg-[#0b0b0b] text-white flex items-center justify-center mt-15 p-8">
       <style>{`
         @keyframes floatY { 0% { transform: translateY(0);} 50% { transform: translateY(-12px);} 100% { transform: translateY(0);} }
         .card-float { animation: floatY 4s ease-in-out infinite; }
