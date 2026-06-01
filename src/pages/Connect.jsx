@@ -129,7 +129,7 @@ export default function Connect() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0b0b0b] text-white flex items-center justify-center mt-15 p-8">
+    <div className="min-h-screen bg-[#0b0b0b] text-white flex items-center justify-center mt-12 px-4 py-8">
       <style>{`
         @keyframes floatY { 0% { transform: translateY(0);} 50% { transform: translateY(-12px);} 100% { transform: translateY(0);} }
         .card-float { animation: floatY 4s ease-in-out infinite; }
@@ -138,7 +138,7 @@ export default function Connect() {
 
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left big visual - sliding testimonial carousel */}
-        <div className="relative rounded-3xl overflow-hidden h-[640px] lg:h-[820px] bg-gradient-to-br from-[#ff6b6b] via-[#000000] to-[#ff3d7f] p-6 shadow-2xl">
+        <div className="relative rounded-3xl overflow-hidden h-80 sm:h-[420px] md:h-[640px] lg:h-[820px] bg-gradient-to-br from-[#ff6b6b] via-[#000000] to-[#ff3d7f] p-4 sm:p-6 shadow-2xl w-full">
           <div className="absolute inset-0 opacity-30 mix-blend-overlay" style={{background: 'radial-gradient(closest-side, rgba(255,255,255,0.03), transparent)'}} />
 
           <div className="relative h-full w-full flex items-center">
@@ -180,7 +180,7 @@ export default function Connect() {
         </div>
 
         {/* Right contact form */}
-        <div className="bg-[#0f0f0f] rounded-2xl p-10 shadow-lg border border-white/6">
+        <div className="bg-[#0f0f0f] rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg border border-white/6 w-full">
           <h2 className="text-3xl font-bold mb-2">Contact Us</h2>
           <p className="text-sm text-white/70 mb-8">Please reach out to us and we will get back to you at the speed of light.</p>
 

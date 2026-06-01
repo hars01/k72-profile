@@ -42,10 +42,10 @@ export default function SmartFooter() {
                 <div className="h-1 w-14 bg-gray-300 rounded mb-4 opacity-60"></div>
                 <ul className="text-gray-200 space-y-3 text-sm">
                   <li><a href="/" className="hover:underline">Home</a></li>
-                  <li><a href="/services" className="hover:underline">Services</a></li>
-                  <li><a href="/about" className="hover:underline">About Me</a></li>
+                  <li><a href="/projects" className="hover:underline">Services</a></li>
+                  <li><a href="/agence" className="hover:underline">About Me</a></li>
                   {/* <li><a href="/features" className="hover:underline">Features</a></li> */}
-                  <li><a href="/contact" className="hover:underline">Contacts</a></li>
+                  <li><a href="/connect" className="hover:underline">Contacts</a></li>
                 </ul>
               </div>
             </div>

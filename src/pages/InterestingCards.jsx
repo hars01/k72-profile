@@ -81,12 +81,12 @@ export default function InterestingCards() {
   };
   return (
     <>
-    <div className=" bg-black text-white flex justify-center mt-9">
-      <h1 className="text-4xl lg:text-5xl font-bold">Interesting Cards</h1>
+    <div className="bg-black text-white flex justify-center mt-9 px-4">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Interesting Cards</h1>
    </div>
-    <main className="min-h-screen bg-black text-yellow-50 flex items-center justify-center p-2">
-      
-      <CardContainer className="inter-var">
+    <main className="min-h-screen bg-black text-yellow-50 flex items-start justify-center px-4 py-6">
+      <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-start gap-6 justify-center">
+      <CardContainer className="inter-var w-full flex-shrink-0">
         <CardBody className="bg-green-950 border border-white/10 rounded-xl p-6 w-[22rem] sm:w-[30rem]">
 
           <CardItem translateZ={50} className="text-2xl font-bold">
@@ -103,7 +103,7 @@ export default function InterestingCards() {
           <CardItem translateZ={100} className="w-full mt-6">
             <img
               src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257285/myCardOne_qiso76.png"
-              className="h-60 w-full object-cover rounded-xl"
+              className="h-48 sm:h-60 md:h-72 w-full object-cover rounded-xl"
               alt="thumbnail"
             />
           </CardItem>
@@ -124,7 +124,7 @@ export default function InterestingCards() {
 
         </CardBody>
       </CardContainer>
-      <CardContainer className="inter-var p-8">
+      <CardContainer className="inter-var p-8 w-full flex-shrink-0">
         <CardBody className="bg-green-950 border border-white/10 rounded-xl p-6 w-[22rem] sm:w-[30rem]">
 
           <CardItem translateZ={50} className="text-2xl font-bold">
@@ -141,7 +141,7 @@ export default function InterestingCards() {
           <CardItem translateZ={100} className="w-full mt-6">
             <img
               src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257287/myCardTwo_xtcvdk.png"
-              className="h-60 w-full object-cover rounded-xl"
+              className="h-48 sm:h-60 md:h-72 w-full object-cover rounded-xl"
               alt="thumbnail"
             />
           </CardItem>
@@ -162,7 +162,7 @@ export default function InterestingCards() {
 
         </CardBody>
       </CardContainer>
-      
+      </div>
     </main>
     
     </>

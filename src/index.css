@@ -14,27 +14,45 @@ body {
     src: url(../public/fonts/Lausanne-500.woff2);
 }
 
-.moveX{
+/* Link Animation */
+.link {
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+/* Hover Layer */
+.moveLink {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+/* Hover Effect */
+.link:hover .moveLink {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* Marquee Animation */
+.moveX {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
     animation-name: moveAnimation;
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.moveLink{
-    opacity: 0;
-    transition: all ease 0.3s;
-}
-
-.link:hover .moveLink{
-    opacity: 1;
-}
-
 @keyframes moveAnimation {
-    from{
-        transform: translateX(0);
+    from {
+        transform: translateX(0%);
     }
+
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
