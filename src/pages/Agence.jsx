@@ -12,18 +12,17 @@ const Agence = () => {
   const imageRef = useRef(null);
 
   const imagesArray = [
-    "my3.jpg",
-    "my4.jpg",
-    "my5.jpg",
-    "my6.jpg",
-    "my7.jpg",
-    "my8.jpg",
-    "my9.jpg",
-    "my10.jpg",
-    "my11.jpg",
-    "my13.jpg",
-    "my14.jpg",
-
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090494/my13_r7h1tm.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090421/my5_qsmypg.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090485/my14_dafpf3.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780261636/1751875140943_fiv2ep.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780261271/1771881190830_qxn5r8.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780260308/IMG_20241115_134343346_HDR_g7mkld.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780260427/IMG_20251109_175100009_HDR_bzsjvk.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090428/my11_ombc1q.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780260616/IMG_20260220_134608704_HDR_v8zlxq.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780260806/IMG_20260220_160218609_HDR_hznuy6.jpg",
+    "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090406/my4_vxcqyv.jpg"
   ]
 
   useGSAP(function(){
@@ -53,7 +52,7 @@ return (
     // <div className='parent relative'>
     <div className='parent relative min-h-[250vh] overflow-hidden'>
       <div className='relative py-1'>
-        <div ref={imageDivRef} className=' absolute overflow-hidden h-[27vw] rounded-2xl w-[20vw] top-60  left-[25vw] '>
+        <div ref={imageDivRef} className=' absolute overflow-hidden h-[30vw] rounded-2xl w-[23vw] top-60  left-[25vw] '>
           <img  ref={imageRef} className='h-full object-cover w-full' src="my.jpg" alt="" />
         </div>
         <div className='relative font-[font2]'>

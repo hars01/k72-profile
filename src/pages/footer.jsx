@@ -13,7 +13,7 @@ export default function SmartFooter() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             {/* Left: logo + description */}
             <div className="md:col-span-4">
-              <img src="public\myLogo2.png" className="w-28 md:w-32 mb-6" alt="logo" />
+              <img src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090459/myLogo2_snzvjh.png" className="w-28 md:w-32 mb-6" alt="logo" />
               <p className="text-gray-300 leading-relaxed">
                           Ladies and Gentlemen, thanks for visiting.  
           If you want to connect with me, check my social links below.  

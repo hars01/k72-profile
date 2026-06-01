@@ -125,38 +125,40 @@ const FullScreenNav = () => {
                         </div>
                     </Link>
 
+                    <Link to="/projects" onClick={() => { setNavOpen(false) }} className='link origin-top relative border-t-1 border-white block'>
                     <div className='link origin-top relative border-t-1 border-white'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Projects</h1>
                           <div id='links' className='moveLink absolute text-black flex top-0 bg-[#D3FD50] w-full h-full overflow-hidden'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>HM School</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/project/hmschool.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780342403/Screenshot_2026-06-02_010159_yfext1.png" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Apple Ads</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/project/appleDashboard.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257185/projectManagement_murgwf.png" alt="" />
                             </div>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Doctor Room</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/project/doctor.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257184/onePagePortfolio_y0a347.png" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>hiFoodie</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/project/hiFoodie.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257186/todoProject_nmgbln.png" alt="" />
                             </div>
                         </div>
                     </div>
+                    </Link>
 
                     <Link to="/interesting-cards" onClick={() => { setNavOpen(false) }} className='link origin-top relative border-t-1 border-white block'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Cards</h1>
                           <div id='links' className='moveLink absolute text-black flex top-0 bg-[#D3FD50] w-full h-full overflow-hidden'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Intresting</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/card/myCardOne.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257287/myCardTwo_xtcvdk.png" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Visiting</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/card/myCardTwo.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257285/myCardOne_qiso76.png" alt="" />
                             </div>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Introductary</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/card/myCardOne.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257287/myCardTwo_xtcvdk.png" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Passionate</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="/card/myCardTwo.png" alt="" />
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257285/myCardOne_qiso76.png" alt="" />
                             </div>
                         </div>
                     </Link>
@@ -165,21 +167,21 @@ const FullScreenNav = () => {
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Content</h1>
                          <div id='links' className='moveLink absolute text-black flex top-0 bg-[#D3FD50] w-full h-full overflow-hidden'>
                             <div className='moveX flex items-center'>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
+                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Vlogs</h2>
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780090143/cld-sample-2.jpg" alt="" />
+                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Details</h2>
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1763114679/samples/ecommerce/accessories-bag.jpg" alt="" />
                             </div>
                             <div className='moveX flex items-center'>
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
-                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
+                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Informations</h2>
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1763114686/samples/balloons.jpg" alt="" />
+                                <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>News</h2>
+                                <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1763114674/samples/ecommerce/analog-classic.jpg" alt="" />
                             </div>
                         </div>
                     </Link>
 
-                    <div className='link origin-top relative border-t-1 border-white'>
+                    <Link to="/coming-soon" onClick={() => { setNavOpen(false); window.scrollTo(0,0); }} className='link origin-top relative border-t-1 border-white block'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Upcoming</h1>
                          <div id='links' className='moveLink absolute text-black flex top-0 bg-[#D3FD50] w-full h-full overflow-hidden'>
                             <div className='moveX flex items-center'>
@@ -195,7 +197,7 @@ const FullScreenNav = () => {
                                 <img className='lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
                     <Link to="/connect" onClick={() => { setNavOpen(false); window.scrollTo(0,0); }} className='link origin-top relative border-y-1 border-white block'>
                         <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Connect Here</h1>

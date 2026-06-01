@@ -72,11 +72,43 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Apple Dashboard",
+      title: "HM School",
+      summary:
+        "School management platform for students, teachers and attendance.",
+      github: "https://github.com/yourusername/hm-school",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257172/hmschool_fd749b.png",
+    },
+
+    {
+      title: "Apple Ads Dashboard",
       summary:
         "Modern analytics dashboard built using React, Tailwind and charts.",
       github: "https://github.com/yourusername/apple-dashboard",
-      image: "/project/appleDashboard.png",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257089/appleDashboard_hqcwcn.png",
+    },
+
+     {
+      title: "Real Time Tracking",
+      summary:
+        "Real-time tracking dashboard with live data updates and interactive maps.",
+      github: "#",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780342403/Screenshot_2026-06-02_010159_yfext1.png",
+    },
+
+    {
+      title: "NFT Minter",
+      summary:
+        "NFT minter dApp allowing users to create and manage their own NFTs on the blockchain.",
+      github: "#",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780343859/Screenshot_2026-06-02_012552_dhc6qv.png",
+    },
+
+    {
+      title: "Car Price Predictor",
+      summary:
+        "Machine learning app that predicts used car prices based on features.",
+      github: "",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780343240/Screenshot_2026-06-02_011637_vau2mh.png",
     },
 
     {
@@ -84,23 +116,16 @@ const Projects = () => {
       summary:
         "Doctor booking platform with authentication and appointment system.",
       github: "https://github.com/yourusername/doctor-app",
-      image: "/project/doctor.png",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257091/doctor_o4cfim.png",
     },
 
-    {
-      title: "HM School",
-      summary:
-        "School management platform for students, teachers and attendance.",
-      github: "https://github.com/yourusername/hm-school",
-      image: "/project/hmschool.png",
-    },
 
     {
       title: "HiFoodie",
       summary:
         "Food delivery frontend with responsive UI and smooth animations.",
       github: "https://github.com/yourusername/hifoodie",
-      image: "/project/hiFoodie.png",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257171/hiFoodie_j6gs1s.png",
     },
 
     {
@@ -108,7 +133,7 @@ const Projects = () => {
       summary:
         "Full MERN e-commerce platform with cart and payment integration.",
       github: "https://github.com/yourusername/ecommerce",
-      image: "/project/ecommerce.png",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257095/ecommerce_msxtso.png",
     },
 
     {
@@ -116,7 +141,7 @@ const Projects = () => {
       summary:
         "Task and team collaboration dashboard inspired by Jira and Notion.",
       github: "https://github.com/yourusername/project-management",
-      image: "/project/projectManagement.png",
+      image: "https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257185/projectManagement_murgwf.png",
     },
   ];
 

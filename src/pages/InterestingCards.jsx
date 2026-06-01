@@ -102,7 +102,7 @@ export default function InterestingCards() {
 
           <CardItem translateZ={100} className="w-full mt-6">
             <img
-              src="/card/myCardOne.png"
+              src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257285/myCardOne_qiso76.png"
               className="h-60 w-full object-cover rounded-xl"
               alt="thumbnail"
             />
@@ -140,7 +140,7 @@ export default function InterestingCards() {
 
           <CardItem translateZ={100} className="w-full mt-6">
             <img
-              src="/card/myCardTwo.png"
+              src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257287/myCardTwo_xtcvdk.png"
               className="h-60 w-full object-cover rounded-xl"
               alt="thumbnail"
             />

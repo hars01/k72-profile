@@ -6,6 +6,7 @@ import Skill from './comonents/skills/Skill'
 import ContentPage from './comonents/Content/content'
 import Connect from './pages/Connect'
 import InterestingCards from './pages/InterestingCards'
+import ComingSoonPage from './pages/ComingSoonPage'
 // import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -39,6 +40,7 @@ const App = () => {
         <Route path='/skills' element={<Skill />} /> 
         <Route path='/content' element={<ContentPage />} />
         <Route path='/interesting-cards' element={<InterestingCards />} />
+        <Route path='/coming-soon' element={<ComingSoonPage />} />
         <Route path='/connect' element={<Connect />} />
       </Routes>
       {location.pathname !== '/' && <SmartFooter />}

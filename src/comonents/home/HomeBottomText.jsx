@@ -12,6 +12,7 @@ const HomeBottomText = () => {
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; K72 est une agence qui pense chaque action pour nourrir la marque. Demain, dans 5 mois et dans 5 ans. On cherche la friction qui crée l’étincelle pour générer de l’émotion. Pour assurer une relation honnête, on est sans filtre, on dit ce qui doit être dit, on fait ce qui doit être fait.</p> */}
       <div className='lg:border-5 border-3 hover:border-[#0d2bd4] hover:text-[#0d2bd4] lg:h-34 flex items-center px-3  lg:px-10 border-amber-900 rounded-full uppercase'>
         <a className='text-[6vw] lg:mt-6' href='/resume/Harsh_Mishra_Resume.pdf' target='_blank' rel='noopener noreferrer' download>Resume</a>
+        {/* <a className='text-[6vw] lg:mt-6' href='https://res.cloudinary.com/dupnbyhjc/image/upload/v1780344165/Screenshot_2026-06-02_013218_yeim06.png' target='_blank' rel='noopener noreferrer' download>Resume</a> */}
       </div>
       <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-34 flex items-center px-3  lg:px-10 border-white rounded-full uppercase'>
         <Link className='text-[6vw] lg:mt-6' to='/projects'>Projects</Link>
