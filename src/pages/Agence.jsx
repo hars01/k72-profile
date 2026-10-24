@@ -40,7 +40,7 @@ const Agence = () => {
           if(elem.progress<1) {
             imeageIndex = Math.floor(elem.progress * imagesArray.length);
           }else{
-            imageIndex = imagesArray.length - 1;
+            imeageIndex = imagesArray.length - 1;
           }
           imageRef.current.src = imagesArray[imeageIndex];
         }
@@ -61,9 +61,9 @@ return (
               Harsh</h1>
           </div>
 
-          <div className='pl-[40%] mt-20 p-3 text-emerald-50'>
-            <p className='text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I am Harsh Mishra, a passionate Full Stack Developer and Computer Science student who loves building immersive digital experiences with modern web technologies. I specialize in the MERN stack and enjoy transforming ideas into responsive, high-performance applications with clean UI/UX and smooth animations.</p>
-            <p className='mt-10 text-xl leading-tight'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I believe great products are not just functional — they should feel alive, intuitive, and memorable. My journey in tech is driven by curiosity, consistency, and the desire to create impactful solutions while continuously learning and evolving as a developer.</p>
+          <div className='mt-12 p-4 text-emerald-50 md:mt-20 md:pl-[40%] md:p-3'>
+            <p className='text-base leading-tight sm:text-xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I am Harsh Mishra, a passionate Full Stack Developer and Computer Science student who loves building immersive digital experiences with modern web technologies. I specialize in the MERN stack and enjoy transforming ideas into responsive, high-performance applications with clean UI/UX and smooth animations.</p>
+            <p className='mt-10 text-base leading-tight sm:text-xl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I believe great products are not just functional — they should feel alive, intuitive, and memorable. My journey in tech is driven by curiosity, consistency, and the desire to create impactful solutions while continuously learning and evolving as a developer.</p>
           </div>
         </div>
       </div>

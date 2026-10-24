@@ -85,9 +85,9 @@ export default function InterestingCards() {
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Interesting Cards</h1>
    </div>
     <main className="min-h-screen bg-black text-yellow-50 flex items-start justify-center px-4 py-6">
-      <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-start gap-6 justify-center">
+      <div className="grid w-full max-w-6xl grid-cols-1 items-center justify-items-center gap-6 lg:grid-cols-2 lg:items-start">
       <CardContainer className="inter-var w-full flex-shrink-0">
-        <CardBody className="bg-green-950 border border-white/10 rounded-xl p-6 w-[22rem] sm:w-[30rem]">
+        <CardBody className="w-full max-w-[30rem] rounded-xl border border-white/10 bg-green-950 p-6">
 
           <CardItem translateZ={50} className="text-2xl font-bold">
             Virtual Visiting Card - Front Look
@@ -105,6 +105,8 @@ export default function InterestingCards() {
               src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257285/myCardOne_qiso76.png"
               className="h-48 sm:h-60 md:h-72 w-full object-cover rounded-xl"
               alt="thumbnail"
+              loading="lazy"
+              decoding="async"
             />
           </CardItem>
 
@@ -124,8 +126,8 @@ export default function InterestingCards() {
 
         </CardBody>
       </CardContainer>
-      <CardContainer className="inter-var p-8 w-full flex-shrink-0">
-        <CardBody className="bg-green-950 border border-white/10 rounded-xl p-6 w-[22rem] sm:w-[30rem]">
+      <CardContainer className="inter-var w-full flex-shrink-0 p-4 sm:p-8">
+        <CardBody className="w-full max-w-[30rem] rounded-xl border border-white/10 bg-green-950 p-6">
 
           <CardItem translateZ={50} className="text-2xl font-bold">
            Virtual Visting Card - Back Look
@@ -143,6 +145,8 @@ export default function InterestingCards() {
               src="https://res.cloudinary.com/dupnbyhjc/image/upload/v1780257287/myCardTwo_xtcvdk.png"
               className="h-48 sm:h-60 md:h-72 w-full object-cover rounded-xl"
               alt="thumbnail"
+              loading="lazy"
+              decoding="async"
             />
           </CardItem>
 

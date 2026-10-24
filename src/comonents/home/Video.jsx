@@ -11,7 +11,7 @@ function Video() {
       loop
       muted
       playsInline
-      preload="auto"
+      preload="metadata"
       poster={posterUrl}
       src={videoUrl}
     />

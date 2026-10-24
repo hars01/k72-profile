@@ -8,11 +8,11 @@ function home() {
   return (
 
     <div className='text-white'>
-       <div className='h-screen w-screen fixed'>
+      <div className='h-screen w-full fixed'>
         <Video />       
        </div>
 
-       <div className='h-screen w-screen relative pb-5 overflow-hidden flex flex-col justify-between'>
+      <div className='h-screen w-full relative pb-5 overflow-hidden flex flex-col justify-between'>
             <HomeHeroText />
             <HomeBottomText />
        </div>

@@ -86,6 +86,8 @@ const ProjectCard = ({ project }) => {
           className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
           src={project.image}
           alt={project.title}
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
